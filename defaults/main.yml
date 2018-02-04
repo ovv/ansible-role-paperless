@@ -7,6 +7,9 @@ paperless_base_packages:
   - unpaper
   - gnupg
   - expect
+  - build-essential
+  - pkg-config
+  - python-dev
   - libpoppler-cpp-dev
 
 paperless_custom_packages:
