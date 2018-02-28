@@ -35,14 +35,18 @@ Role Variables
 * `paperless_encrypt_passphrase`: Paperless encryption passphrase.
 * `paperless_secret_key`: Paperless secret key.
 
+
+* `paperless_consumption_dir`: Consumption directory for paperless (default to `/opt/paperless/consumption`).
+* `paperless_consumption_dir_group`: Group of the consumption directory (default to `paperless`).
+* `paperless_consumption_dir_users`: List of users to add to the `paperless_consumption_dir_group` (default to `[paperless]`).
+
+
 * `paperless_allowed_host`: List of hosts allowed to connect (default to `[127.0.0.1]`).
 * `paperless_ocr_language`: Default ocr language (default to `eng`).
 * `paperless_tz`: Timezone (default to `Etc/UTC`).
 * `paperless_list_per_page`: Number of item per page (default to `100`).
-* `paperless_consumption_dir`: Consumption directory for paperless (default to `/opt/paperless/consumption`).
-* `paperless_consumption_dir_group`: Group of the consumption directory (default to `paperless`).
-* `paperless_consumption_dir_users`: List of users to add to the `paperless_consumption_dir_group` (default to `[paperless]`).
 * `paperless_custom_packages`: Custom packages to install, like some tesseract languages (default to `[]`).
+
 
 * `paperless_backup`: Export paperless documents and fetch them to `paperless_backup_directory` (default to `False`).
 * `paperless_restore`: Upload and import documents from the `paperless_backup_directory` (default to `False`).
