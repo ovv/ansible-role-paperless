@@ -93,7 +93,7 @@
     virtualenv: "{{ paperless_virtualenv }}"
 
 - name: Check admin user exist
-  shell: echo "from django.contrib.auth import get_user_model; User = get_user_model(); print(User.objects.filter(username='{{ paperless_user }}').count()>0)" | {{ paperless_virtualenv }}/bin/python /opt/paperless/source/src/manage.py shell
+  shell: echo "from django.contrib.auth import get_user_model; User = get_user_model(); print(User.objects.filter(username='{{ paperless_admin_user }}').count()>0)" | {{ paperless_virtualenv }}/bin/python /opt/paperless/source/src/manage.py shell
   changed_when: "'False' in admin_exist.stdout"
   register: admin_exist
 
