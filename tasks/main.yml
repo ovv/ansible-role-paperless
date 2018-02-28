@@ -12,16 +12,16 @@
     state: latest
   with_items: "{{ paperless_custom_packages }}"
 
+- name: Paperless group
+  group:
+    name: paperless
+    state: present
+
 - name: Paperless user
   user:
     name: paperless
     createhome: True
     group: paperless
-
-- name: Paperless group
-  group:
-    name: paperless
-    state: present
 
 - name: paperless consumption group
   group:

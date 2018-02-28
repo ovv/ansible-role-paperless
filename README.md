@@ -38,7 +38,7 @@ Role Variables
 
 * `paperless_consumption_dir`: Consumption directory for paperless (default to `/opt/paperless/consumption`).
 * `paperless_consumption_dir_group`: Group of the consumption directory (default to `paperless`).
-* `paperless_consumption_dir_users`: List of users to add to the `paperless_consumption_dir_group` (default to `[paperless]`).
+* `paperless_consumption_dir_users`: List of users to add to the `paperless_consumption_dir_group` (default to `[]`).
 
 
 * `paperless_allowed_host`: List of hosts allowed to connect (default to `[127.0.0.1]`).
