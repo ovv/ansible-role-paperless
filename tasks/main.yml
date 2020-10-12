@@ -85,6 +85,8 @@
   template:
     src: "{{ paperless_configuration_template }}"
     dest: /etc/paperless.conf
+    owner: paperless
+    mode: g+r
   notify: Restart Paperless
 
 - name: Migrate Database
